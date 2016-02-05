@@ -3,10 +3,9 @@ These bat files will help setting up nodeJS servers with NSSM and IIS.
 Don't forget to
 - Install IIS redirect module
 - Install NSSM somewhere
-- Setup the batfiles, see below
 - If you don't use Microsoft dnscmd, but external DNS, then just remove the call to dns-create.bat in go.bat
 - Create a rootfolder for your nodeJS apps, e.g. d:\nodeApps; each of your apps should be in its own folder, with the foldername set to the domain, e.g. d:\nodeApps\subdomain.domain.com\ or d:\nodeApps\domain.com\
-- Put the *.bat files bellow to the root folder, e.g. d:\nodeApps\go.bat, d:\nodeApps\nssm.bat, ...
+- Put the *.bat files bellow to the root folder, e.g. d:\nodeApps\go.bat, d:\nodeApps\nssm.bat, ... and set them up
 - Call go.bat from cmd to install your app: go.bat domain.com install 3891
 - Call go.bat from cmd to remove your app: go.bat domain.com remove
 
